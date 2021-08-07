@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .clock {
+    height: 28vw;
+    color: white;
+    font-size: 20vw;
+    font-family: sans-serif;
+    line-height: 28.4vw;
+    display: flex;
+    position: relative;
+    /*background: green;*/
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .clock::before, .clock::after {
+    content: '';
+    width: 7ch;
+    height: 3vh;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .clock::after {
+    bottom: 0;
+  }
+  
+  .clock > div {
+    display: flex;
+  }
+  
+  .tick {
+    line-height: 26vw;
+  }
+  
+  .tick-hidden {
+    opacity: 0;
+  }
+  
+  .move {
+    animation: move linear 1s infinite;
+  }
+
+  .moveback {
+    animation: moveback linear 0.01s infinite;
+  }
+  
+  
+  @keyframes move {
+    from {
+      transform: translateY(0vh);
+    }
+    to {
+      transform: translateY(-20vh);
+    }
+  }
+
+  @keyframes moveback {
+    from {
+      transform: translateY(-20vh);
+    }
+    to {
+      transform: translateY(0vh);
+    }
+  }
+  
+  
+  @media (min-width: 1024px) {
+    .clock {
+      width: 720px;
+      height: 184.32px;
+      font-size: 184.32px;
+      line-height: 184.32px;
+    }
+    .tick{
+      line-height: 163px;
+    }
+  }
