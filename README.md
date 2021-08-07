@@ -56,7 +56,7 @@ docker-compose up
 - HTML5 
 - CSS - animation
 
-## Framework:
+## Framework/Library:
 - Codeigniter v4
 - Boostrap v5.0
 
