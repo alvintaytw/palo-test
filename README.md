@@ -52,7 +52,7 @@ docker-compose up
 
 ## Programming Languages:
 - PHP
-- Javascript - Jquery,Ajax
+- Javascript,Jquery,Ajax
 - HTML5 
 - CSS - animation
 
