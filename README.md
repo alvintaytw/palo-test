@@ -44,7 +44,7 @@ Navigate to the git folder
 cd palo-test
 ```
 
-Setup docker 
+Setup docker localhost environment
 ```Terminal
 docker-compose up
 ```
